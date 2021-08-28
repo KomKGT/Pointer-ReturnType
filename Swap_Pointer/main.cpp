@@ -6,7 +6,6 @@ using namespace std;
 
 void swapCPP(int &a,int &b)			// CPP ONLY !
 {
-	cout<<" &a = "<<&a<<endl;
 	int temp = a; //a = 55 
 	a = b;
 	b = temp;
@@ -21,7 +20,6 @@ int main(int argc, char** argv) {
 	
 	/*CPP*/
 	int A = 55,B = 6;
-	cout<<"Add A = "<<&A<<endl;
 	cout<<"Before Swap"<<" A = "<<A<<" B = "<<B<<endl;
 	swapCPP(A,B);
 	cout<<"After Swap"<<" A = "<<A<<" B = "<<B<<endl;
