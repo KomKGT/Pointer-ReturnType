@@ -20,8 +20,8 @@ double *saraly::sell()
 	return ptr;
 }
 int main(int argc, char** argv) {
-	class saraly *p1 = new saraly;
-	cout << p1->getsaraly()<<endl;
-	cout << * p1->sell();
+	class saraly *p1 = new saraly;  //กรณีใช้ new สร้าง object เวลาเรียก function ต้องใช้ ->
+	cout << p1->getsaraly()<<endl;  //output = 40.5
+	cout << * p1->sell();		//output = 15.0
 	return 0;
 }
